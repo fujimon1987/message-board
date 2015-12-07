@@ -3,8 +3,9 @@ class MessagesController < ApplicationController
   def index
     @messages = Message.all
     @message = Message.new
-    def edit
-    end
+  end
+
+  def edit
   end
   
   def update
@@ -40,6 +41,6 @@ class MessagesController < ApplicationController
   end
   
   def set_message
-    @message =Message.find(params[:id])
+    @message = Message.find(params[:id])
   end
 end
